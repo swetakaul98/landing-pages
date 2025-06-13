@@ -4,60 +4,91 @@
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Get Fit Fast</title>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
           <style>
+            * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
             body {
-              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-family: 'Inter', sans-serif;
+              background: linear-gradient(to right, #fdfbfb, #ebedee);
+              height: 100vh;
               display: flex;
-              flex-direction: column;
               align-items: center;
               justify-content: center;
-              height: 100vh;
-              margin: 0;
-              background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-              color: #1a202c;
               padding: 2rem;
+              background-image: url('https://images.unsplash.com/photo-1581009146145-b5f1f4e3e9a1?auto=format&fit=crop&w=1200&q=80');
+              background-size: cover;
+              background-position: center;
+              color: #fff;
+            }
+
+            .card {
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(20px);
+              border-radius: 16px;
+              padding: 3rem;
               text-align: center;
+              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+              max-width: 480px;
+              width: 100%;
             }
 
             h1 {
-              font-size: 3rem;
+              font-size: 2.5rem;
+              font-weight: 700;
               margin-bottom: 1rem;
-              color: #2d3748;
+              color: #ffffff;
             }
 
             h2 {
-              font-size: 1.5rem;
-              color: #4a5568;
-              margin-bottom: 0.5rem;
+              font-size: 1.3rem;
+              font-weight: 600;
+              margin-bottom: 1rem;
+              color: #f0f0f0;
             }
 
             p {
               font-size: 1rem;
-              color: #718096;
-              max-width: 600px;
               margin-bottom: 2rem;
+              color: #f8f8f8;
             }
 
             a.cta {
-              display: inline-block;
-              padding: 0.75rem 1.5rem;
-              background-color: #3182ce;
+              background: #ff6b6b;
               color: white;
-              border-radius: 0.5rem;
+              padding: 0.9rem 2rem;
+              border-radius: 9999px;
               text-decoration: none;
-              font-weight: bold;
-              transition: background-color 0.3s ease;
+              font-weight: 600;
+              transition: background 0.3s ease;
+              box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
             }
 
             a.cta:hover {
-              background-color: #2b6cb0;
+              background: #ff3b3b;
+              box-shadow: 0 6px 18px rgba(255, 59, 59, 0.4);
+            }
+
+            @media (max-width: 600px) {
+              .card {
+                padding: 2rem;
+              }
+
+              h1 {
+                font-size: 2rem;
+              }
             }
           </style>
         </head>
         <body>
-          <h1>Get Fit Fast</h1>
-          <h2>Lose 5kg in 5 Weeks</h2>
-          <p>Start your journey now</p>
-          <a class="cta" href="https://example.com/signup" target="_blank">Join Today</a>
+          <div class="card">
+            <h1>Get Fit Fast</h1>
+            <h2>Lose 5kg in 5 Weeks</h2>
+            <p>Start your journey now</p>
+            <a class="cta" href="https://example.com/signup" target="_blank">Join Today</a>
+          </div>
         </body>
         </html>
