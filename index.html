@@ -5,87 +5,145 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Get Fit Fast</title>
           <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
           <style>
             body {
               margin: 0;
               font-family: 'Outfit', sans-serif;
               background: linear-gradient(to right, #0f172a, #1e293b);
-              color: #fff;
+              color: #ffffff;
+              line-height: 1.6;
+              overflow-x: hidden;
+            }
+
+            .hero {
+              min-height: 100vh;
               display: flex;
-              align-items: center;
+              flex-direction: column;
               justify-content: center;
-              height: 100vh;
+              align-items: center;
               text-align: center;
               padding: 2rem;
-              overflow: hidden;
             }
 
-            .container {
-              max-width: 700px;
-              padding: 2rem;
-              background: rgba(255, 255, 255, 0.05);
-              border: 1px solid rgba(255, 255, 255, 0.1);
-              border-radius: 20px;
-              box-shadow: 0 4px 30px rgba(0,0,0,0.4);
-              backdrop-filter: blur(12px);
-            }
-
-            h1 {
+            .hero h1 {
               font-size: 3rem;
-              font-weight: 700;
               margin-bottom: 1rem;
+              font-weight: 700;
             }
 
-            h2 {
+            .hero h2 {
               font-size: 1.5rem;
-              font-weight: 500;
               margin-bottom: 1rem;
               color: #cbd5e1;
             }
 
-            p {
-              font-size: 1.1rem;
+            .hero p {
+              max-width: 600px;
               color: #e2e8f0;
+              font-size: 1.1rem;
               margin-bottom: 2rem;
-              line-height: 1.6;
             }
 
-            a.cta {
-              display: inline-block;
+            .cta-button {
               background: #3b82f6;
-              color: white;
               padding: 0.9rem 2rem;
+              border-radius: 50px;
               font-size: 1rem;
               font-weight: 600;
-              border-radius: 999px;
+              color: white;
               text-decoration: none;
               transition: all 0.3s ease;
+              box-shadow: 0 0 10px #3b82f6, 0 0 40px #3b82f6;
             }
 
-            a.cta:hover {
+            .cta-button:hover {
               background: #2563eb;
               transform: scale(1.05);
+              box-shadow: 0 0 12px #60a5fa, 0 0 50px #3b82f6;
+            }
+
+            .features {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 2rem;
+              padding: 4rem 2rem;
+              background: #0f172a;
+              color: #cbd5e1;
+            }
+
+            .feature {
+              background: #1e293b;
+              padding: 2rem;
+              border-radius: 1rem;
+              text-align: center;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+              transition: transform 0.3s ease;
+            }
+
+            .feature:hover {
+              transform: translateY(-5px);
+            }
+
+            .feature h3 {
+              margin-bottom: 1rem;
+              font-size: 1.2rem;
+              font-weight: 600;
+              color: #fff;
+            }
+
+            .feature p {
+              font-size: 0.95rem;
+              color: #94a3b8;
+            }
+
+            footer {
+              text-align: center;
+              padding: 2rem;
+              color: #94a3b8;
+              font-size: 0.9rem;
+              background: #0f172a;
             }
 
             @media (max-width: 600px) {
-              h1 {
-                font-size: 2rem;
+              .hero h1 {
+                font-size: 2.2rem;
               }
-              h2 {
+
+              .hero h2 {
                 font-size: 1.2rem;
-              }
-              p {
-                font-size: 1rem;
               }
             }
           </style>
         </head>
         <body>
-          <div class="container">
+          <section class="hero" data-aos="fade-up">
             <h1>Get Fit Fast</h1>
             <h2>Lose 5kg in 5 Weeks</h2>
             <p>Start your journey now</p>
-            <a class="cta" href="https://example.com/signup" target="_blank" rel="noopener">Join Today</a>
-          </div>
+            <a href="https://example.com/signup" class="cta-button" target="_blank">Join Today</a>
+          </section>
+
+          <section class="features">
+            <div class="feature" data-aos="fade-up" data-aos-delay="100">
+              <h3>🏋️‍♀️ Personalized Plans</h3>
+              <p>Custom routines tailored to your goals & body type — beginner to pro.</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="200">
+              <h3>⏱️ 24/7 Coach Access</h3>
+              <p>Message your trainer anytime and stay on track without guesswork.</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-delay="300">
+              <h3>🍎 Diet + Mindset</h3>
+              <p>Meal plans & daily motivation designed for real, sustainable change.</p>
+            </div>
+          </section>
+
+          <footer>
+            © 2025 Get Fit Fast. All rights reserved.
+          </footer>
+
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>AOS.init();</script>
         </body>
         </html>
