@@ -4,91 +4,88 @@
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Get Fit Fast</title>
-          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
           <style>
-            * {
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-            }
             body {
-              font-family: 'Inter', sans-serif;
-              background: linear-gradient(to right, #fdfbfb, #ebedee);
-              height: 100vh;
+              margin: 0;
+              font-family: 'Outfit', sans-serif;
+              background: linear-gradient(to right, #0f172a, #1e293b);
+              color: #fff;
               display: flex;
               align-items: center;
               justify-content: center;
+              height: 100vh;
+              text-align: center;
               padding: 2rem;
-              background-image: url('https://images.unsplash.com/photo-1581009146145-b5f1f4e3e9a1?auto=format&fit=crop&w=1200&q=80');
-              background-size: cover;
-              background-position: center;
-              color: #fff;
+              overflow: hidden;
             }
 
-            .card {
-              background: rgba(255, 255, 255, 0.1);
-              backdrop-filter: blur(20px);
-              border-radius: 16px;
-              padding: 3rem;
-              text-align: center;
-              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-              max-width: 480px;
-              width: 100%;
+            .container {
+              max-width: 700px;
+              padding: 2rem;
+              background: rgba(255, 255, 255, 0.05);
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              border-radius: 20px;
+              box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+              backdrop-filter: blur(12px);
             }
 
             h1 {
-              font-size: 2.5rem;
+              font-size: 3rem;
               font-weight: 700;
               margin-bottom: 1rem;
-              color: #ffffff;
             }
 
             h2 {
-              font-size: 1.3rem;
-              font-weight: 600;
+              font-size: 1.5rem;
+              font-weight: 500;
               margin-bottom: 1rem;
-              color: #f0f0f0;
+              color: #cbd5e1;
             }
 
             p {
-              font-size: 1rem;
+              font-size: 1.1rem;
+              color: #e2e8f0;
               margin-bottom: 2rem;
-              color: #f8f8f8;
+              line-height: 1.6;
             }
 
             a.cta {
-              background: #ff6b6b;
+              display: inline-block;
+              background: #3b82f6;
               color: white;
               padding: 0.9rem 2rem;
-              border-radius: 9999px;
-              text-decoration: none;
+              font-size: 1rem;
               font-weight: 600;
-              transition: background 0.3s ease;
-              box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+              border-radius: 999px;
+              text-decoration: none;
+              transition: all 0.3s ease;
             }
 
             a.cta:hover {
-              background: #ff3b3b;
-              box-shadow: 0 6px 18px rgba(255, 59, 59, 0.4);
+              background: #2563eb;
+              transform: scale(1.05);
             }
 
             @media (max-width: 600px) {
-              .card {
-                padding: 2rem;
-              }
-
               h1 {
                 font-size: 2rem;
+              }
+              h2 {
+                font-size: 1.2rem;
+              }
+              p {
+                font-size: 1rem;
               }
             }
           </style>
         </head>
         <body>
-          <div class="card">
+          <div class="container">
             <h1>Get Fit Fast</h1>
             <h2>Lose 5kg in 5 Weeks</h2>
             <p>Start your journey now</p>
-            <a class="cta" href="https://example.com/signup" target="_blank">Join Today</a>
+            <a class="cta" href="https://example.com/signup" target="_blank" rel="noopener">Join Today</a>
           </div>
         </body>
         </html>
